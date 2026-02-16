@@ -1,5 +1,6 @@
 # SQL-PowerBI-Pizza-Sales-Analytics-Dashboard
 Interactive Business Intelligence project focusing on sales data analysis, demonstrating ETL processes, and dashboard visualization utilising SQL and PowerBI.
+SQL querries available in text document, PBI reports available in .pbix file or with png screenshots.
 
 EN: The project was implemented with the aim of analyzing historical pizza sales data and providing management with key information about financial performance and operational peaks.
 
