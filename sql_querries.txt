@@ -1,0 +1,46 @@
+
+--1 most popular pizza + size
+select  pizza_name,  
+		pizza_size,
+		sum(quantity) as quantity_ordered
+	from raw_pizza_sales
+group by pizza_name, pizza_size
+order by quantity_ordered desc;
+
+--2 most popular sizes and avergae price of each
+select pizza_size,
+	   sum(quantity) as quantity_ordered,
+	   avg(unit_price) as average_price
+from raw_pizza_sales
+group by pizza_size;
+
+--3 total revenue by pizza name
+select  pizza_name,
+		sum(quantity) as quantity_ordered,
+		sum(total_price) as revenue
+from raw_pizza_sales
+group by pizza_name
+order by revenue desc;
+
+--4 total revenue by pizza category
+select pizza_category,  
+		sum(total_price) as revenue
+	from raw_pizza_sales
+group by pizza_category
+order by revenue desc;
+
+--5 amount of orders by part of day
+select
+case when order_time < '11:00:00' then 'morning'
+	 when order_time < '13:00:00' then 'noon'
+	 when order_time < '17:00:00' then 'afternoon'
+	 else 'evening' end as order_time_bin,
+	 count(distinct order_id) as amount_of_orders
+from raw_pizza_sales
+group by order_time_bin
+order by amount_of_orders desc;
+
+
+
+
+
