@@ -7,9 +7,13 @@ EN: The project was implemented with the aim of analyzing historical pizza sales
 The project began by querying a database to filter, aggregate, and structure raw data into five specific tables. The following SQL queries were performed:
 
 1.Most Popular Pizza and Size: Aggregated the sum of quantity by both name and size to identify specific high-volume product combinations.
+
 2.Size Popularity and Average Price: Analyzed the relationship between pizza sizes, total quantity ordered, and the average unit price.
+
 3.Total Revenue by Pizza Name: Calculated the total revenue and quantity sold for every individual pizza variety.
+
 4.Total Revenue by Pizza Category: Grouped sales by categories to determine which drive the highest revenue.
+
 5.Amount of Orders by Part of Day: Utilized a CASE statement to bin order times into "morning" "noon" "afternoon" and "evening" counting distinct order IDs to identify peak traffic.
 
 Once the five SQL result sets were imported, the data underwent minor cleaning through Power Query.
@@ -20,10 +24,15 @@ SK: Projekt bol implementovaný s cieľom analyzovať historické údaje o preda
 
 Projekt sa začal dotazovaním databázy na filtrovanie, agregáciu a štruktúrovanie nespracovaných údajov do piatich špecifických tabuliek.
 Boli vykonané nasledujúce SQL dotazy:
+
 1.Najobľúbenejšia pizza a veľkosť: Agregácia súčtu množstva podľa názvu aj veľkosti s cieľom identifikovať konkrétne kombinácie produktov s vysokým objemom.
+
 2.Obľúbenosť veľkosti a priemerná cena: Analýza vzťahu medzi veľkosťami pizze, celkovým objednaným množstvom a priemernou jednotkovou cenou.
+
 3.Celkové tržby podľa názvu pizze: Vypočítali sa celkové tržby a predané množstvo pre každý jednotlivý druh pizze.
+
 4. Celkové tržby podľa kategórie pizze: Zoskupenie predajov podľa kategórií s cieľom určiť, ktoré prinášajú najvyššie tržby.
+
 5.Množstvo objednávok podľa časti dňa: Použitý bol príkaz CASE na rozdelenie časov objednávok do kategórií "morning" "noon" "afternoon" a "evening" pričom sa počítali odlišné ID objednávok na identifikáciu špičky prevádzky.
 
 Po importovaní SQL dotazov boli údaje mierne čistené pomocou Power Query. Analýza bola prezentovaná prostredníctvom dvoch odlišných dashboardov. Finančný dashboard zobrazuje karty KPI pre celkové príjmy a celkové predané množstvo, spolu s koláčovým grafom pre rozdelenie podľa kategórií a stĺpcovým grafom zvýrazňujúcim pizze s najvyšším generovaním príjmov. Dashboard popularity obsahuje stromovú mapu pre popularitu položiek, prstencový graf pre rozdelenie veľkosti a čiarový graf, ktorý vizualizuje denné rozdelenie objednávok na určenie období špičky.
