@@ -31,7 +31,7 @@ Boli vykonané nasledujúce SQL dotazy:
 
 3.Celkové tržby podľa názvu pizze: Vypočítali sa celkové tržby a predané množstvo pre každý jednotlivý druh pizze.
 
-4. Celkové tržby podľa kategórie pizze: Zoskupenie predajov podľa kategórií s cieľom určiť, ktoré prinášajú najvyššie tržby.
+4.Celkové tržby podľa kategórie pizze: Zoskupenie predajov podľa kategórií s cieľom určiť, ktoré prinášajú najvyššie tržby.
 
 5.Množstvo objednávok podľa časti dňa: Použitý bol príkaz CASE na rozdelenie časov objednávok do kategórií "morning" "noon" "afternoon" a "evening" pričom sa počítali odlišné ID objednávok na identifikáciu špičky prevádzky.
 
